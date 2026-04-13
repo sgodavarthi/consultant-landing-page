@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Solutions | Pro Developer Consultant</title>
+    <!-- Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">DevConsult.</div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#facts">Results</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="btn-primary-sm">Get in Touch</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <h1>Transforming Ideas into <span>Scalable Web Apps</span></h1>
+        <p>I help businesses build modern, high-performance web applications that drive growth and wow users.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">Start a Project</a>
+          <a href="#video-section" class="btn-secondary">Watch Explainer</a>
+        </div>
+      </div>
+      <div class="hero-image">
+         <img src="/consultant_profile.png" alt="Consultant Portrait" />
+         <!-- Decorative ring -->
+         <div class="decorative-ring"></div>
+      </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof">
+      <p>Trusted by innovative companies</p>
+      <div class="logos">
+        <span>Acme Corp</span>
+        <span>TechFlow</span>
+        <span>InnovateTech</span>
+        <span>GlobalData</span>
+      </div>
+    </section>
+
+    <!-- Explainer Video -->
+    <section class="video-section" id="video-section">
+      <div class="section-header">
+        <h2>How I Deliver Value</h2>
+        <p>A quick look into my development process and expertise.</p>
+      </div>
+      <div class="video-container">
+        <!-- Placeholder for video -->
+        <div class="video-placeholder" style="background-image: url('/hero_bg.png')">
+           <button class="play-btn">▶</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facts Section -->
+    <section class="facts" id="facts">
+      <div class="fact-card">
+        <h3>50+</h3>
+        <p>Projects Delivered</p>
+      </div>
+      <div class="fact-card">
+        <h3>99%</h3>
+        <p>Client Satisfaction</p>
+      </div>
+      <div class="fact-card">
+        <h3>10x</h3>
+        <p>Average Performance Boost</p>
+      </div>
+      <div class="fact-card">
+        <h3>5+</h3>
+        <p>Years of Experience</p>
+      </div>
+    </section>
+
+    <!-- Pricing Table -->
+    <section class="pricing" id="pricing">
+      <div class="section-header">
+        <h2>Transparent Pricing</h2>
+        <p>Choose a plan that fits your project scope.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Code Audit</h3>
+          <div class="price">$500</div>
+          <ul>
+            <li>Comprehensive review</li>
+            <li>Performance analysis</li>
+            <li>Actionable report</li>
+          </ul>
+          <a href="#contact" class="btn-outline">Choose Audit</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="popular-tag">Most Popular</div>
+          <h3>Project Build</h3>
+          <div class="price">From $5k</div>
+          <ul>
+            <li>Full web app dev</li>
+            <li>Responsive design</li>
+            <li>SEO optimization</li>
+            <li>Deployment</li>
+          </ul>
+          <a href="#contact" class="btn-primary">Start Project</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Retainer</h3>
+          <div class="price">$2k <span>/mo</span></div>
+          <ul>
+            <li>Ongoing maintenance</li>
+            <li>Feature updates</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="#contact" class="btn-outline">Subscribe</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts Form -->
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Ready to build something amazing?</h2>
+          <p>Fill out the form and I'll get back to you within 24 hours.</p>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="John Doe" required />
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="john@example.com" required />
+          </div>
+          <div class="input-group">
+            <label for="message">Project Details</label>
+            <textarea id="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Live Chat Widget -->
+    <div id="chat-widget" class="chat-widget">
+      <div class="chat-header">
+        Live Chat
+        <button id="close-chat" class="close-btn">×</button>
+      </div>
+      <div class="chat-messages">
+        <div class="msg bot">Hi there! Any questions about my services?</div>
+      </div>
+      <div class="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Type a message..." />
+        <button id="send-chat">Send</button>
+      </div>
+    </div>
+    
+    <button id="chat-toggle" class="chat-toggle-btn">💬</button>
+
+    <footer>
+      <p>&copy; 2026 DevConsult. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
